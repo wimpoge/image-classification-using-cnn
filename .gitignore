@@ -53,19 +53,32 @@ models/
 *.pth
 *.pkl
 
-# Project output files
+# Project specific output files
+# CSV Reports
+*.csv
 prediction_results.csv
-misclassified_images.csv
+class_performance.csv
+confidence_stats.csv
+confusion_matrix.csv
+top_misclassifications.csv
 class_accuracy.csv
 common_misclassifications.csv
-confusion_matrix.csv
-confidence_stats.csv
-cnn_model.pth
+misclassified_images.csv
+
+# Visualizations
+*.png
+confusion_matrix.png
+confidence_distribution.png
+
+# Model Files
+cnn_model*
+*export.pkl
+models/
+*.pth
 
 # Dataset (to avoid committing large data files)
 dataset/
 *.jpg
-*.png
 *.jpeg
 *.gif
 *.bmp
@@ -103,7 +116,3 @@ nosetests.xml
 coverage.xml
 *.cover
 .hypothesis/
-
-# Matplotlib
-*.png
-*.pdf
